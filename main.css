@@ -5,33 +5,176 @@ body{
     display:inline-block;
     margin:0;
 }
+/* .card {display:inline-block;} */
 .zero{
     width: 100%;
     height: 120px;
-    background-color: purple;
+    /* background-color: purple; */
 }
 .first{
     width: 49%;
     height: 250px;
-    background-color: blue;
+    /* background-color: blue; */
     margin:0;
+    overflow: hidden;
 }
 
 .second{
     width: 49%;
     height: 250px;
-    background-color: green;
+    /* background-color: green; */
     margin:0;
+    overflow: hidden;
 }
 
 .third{
     width: 39%;
     height: 275px;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .fourth{
     width: 59%;
     height: 275px;
-    background-color: red;
+    /* background-color: red; */
 }
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("images/ShamrockBackground.png");
+    background-size: cover;
+}
+
+p {
+    font-size: 100px;
+}
+
+input {
+    width: 40px;
+}
+
+#main-char {
+    width: 200px;
+    position:absolute;
+    top: 60px;
+    left: 75px;
+}
+
+#up-arrow{
+    position:absolute;
+    left: 152px;
+}
+
+#right-arrow{
+    position:absolute;
+    top: 200px; /*330, 280*/
+    left: 305px;
+}
+#down-arrow{
+    position:absolute;
+    top: 370px;
+    left: 152px;
+}
+#left-arrow{
+    position:absolute;
+    top: 200px;
+}
+
+.progress {
+    width: 300px;
+    height: 25px;
+    margin-bottom:6px;
+}
+
+.stats-inventory {
+    float:right;
+    margin-right: 24px;
+    width: 300px;
+}
+.inventory-div {
+    margin-top: 12px;
+    background-color:#aaa;
+    height: 250px;
+}
+.inventory-item {
+    width: 36px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.inventory-item-count {
+    position: relative;
+    bottom: 18px;
+    right: 18px;
+}
+.grid-container{
+    position:relative;
+    left:450px;
+    width: 350px;
+}
+.character-div{
+    /* position:relative;
+    right:300px;
+    bottom: 75px;
+    z-index: 1; */
+    position:relative;
+    left:150px;
+    top: 25px;
+    z-index: 1;
+    width: 100%;
+}
+@media only screen and (max-width: 900px) {
+    body {
+      background-image:  url("images/ShamrockBackground-Rotated.png");
+      /* background-repeat: no-repeat; */
+    }
+    .character-div{
+        position:relative;
+        left:12px;
+        top: 0px;
+        width: 80%;
+    }
+    #main-char{
+        width: 100px;
+        left: 50px;
+    }
+    #up-arrow{
+        position:absolute;
+        left: 77px;
+        top: 12px;
+    }
+    
+    #right-arrow{
+        position:absolute;
+        top: 110px; /*330, 280*/
+        left: 155px;
+    }
+    #down-arrow{
+        position:absolute;
+        top: 210px;
+        left: 77px;
+    }
+    #left-arrow{
+        position:absolute;
+        top: 110px;
+    }
+    .grid-container{
+        display:none;
+    }
+    .stats-inventory{
+        width: 80%;
+        padding: 12px;
+        margin-right:0px;
+        float:none;
+    }
+    .stats-div{
+        width:100%;
+    }
+    .progress{
+        width:100%;
+        height: 20px;
+    }
+    .inventory-div{
+        height:225px;
+    }
+  }
